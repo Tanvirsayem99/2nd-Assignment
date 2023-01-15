@@ -350,7 +350,8 @@ mobile devices
     .experience{
         grid-template-columns: repeat(1, 1fr);
         align-items: center;
-        
+        width: 80%;
+        margin: 0 auto;
     }
     .experience-box{
         width: 100%;
