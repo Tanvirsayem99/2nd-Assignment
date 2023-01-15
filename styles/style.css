@@ -288,11 +288,14 @@ features-section-end
 /*----------------------------
  experience-section-start
 ----------------------------- */
+.experience-section{
+    width: 80%;
+    margin: 0 auto;
+}
 .experience{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 0 auto;
-    width: 80%;
+    width: 100%;
     gap: 60px;
     margin-top: 80px;
     
@@ -347,11 +350,14 @@ features-section-end
 mobile devices
 ------------------ */
 @media screen and (max-width:576px) {
+    .experience-section{
+        width: 80%;
+        margin: 0 auto;
+    }
     .experience{
         grid-template-columns: repeat(1, 1fr);
         align-items: center;
-        width: 80%;
-        margin: 0 auto;
+        width: 100%;
     }
     .experience-box{
         width: 100%;
