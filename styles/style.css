@@ -3,6 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*------------ 
+font-style
+-------------- */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Work+Sans:wght@400;500;600;700&display=swap');
+
+
+/*------------- 
+font-style 
+--------------*/
 /*---------------------
    common styles-start
 ---------------------- */
@@ -16,6 +27,10 @@ a{
     border-radius: 5px;
     width: 110px;
     height: 35px;
+    font-weight: 600;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
 }
 /*---------------------
    common styles-end
@@ -52,10 +67,16 @@ nav{
 .nav-menu a{
     color: #434343;
     font-size: 16px;
+    font-weight: 500;
 }
-/*----------------
- mobile device
------------------- */
+/*------------ 
+    nav-end
+------------- */
+
+
+/*---------------------------------------
+ -nav-for mobile device- optimize-start
+----------------------------------------- */
 @media screen and (max-width:576px) {
     .nav-title h2{
         font-weight: 700;
@@ -85,12 +106,9 @@ nav{
     }
     
 }
-/*----------------
- mobile device
------------------- */
-/*------------ 
-    nav-end
-------------- */
+/*---------------------------------------
+ -nav-for mobile device- optimize-end
+----------------------------------------- */
 
 
 /*------------------------- 
@@ -122,6 +140,7 @@ header-2nd-part-start
     width: 700px;
     margin: 0 auto;
     font-size: 1rem;
+    font-weight: 400;
 }
 .header-title button{
     background-color: #FF900E;
@@ -142,9 +161,16 @@ header-2nd-part-start
     margin: 0 auto;
    
 }
-/*----------------
- mobile device
------------------- */
+
+
+/*------------------------- 
+header-2nd-part-end
+-------------------------- */
+
+
+/*---------------------------------------------
+ header-2nd-part mobile device-optimize- start
+----------------------------------------------- */
 @media screen and (max-width:576px){
     .header-title h3{
         font-size: 1rem;
@@ -170,16 +196,15 @@ header-2nd-part-start
         font-size: 0.6rem;
     }
 }
-/*----------------
- mobile device
------------------- */
-/*------------------------- 
-header-2nd-part-end
--------------------------- */
-
+/*---------------------------------------------
+ header-2nd-part mobile device-optimize- end
+----------------------------------------------- */
 /*---------------------- 
 header-section-end
 ------------------------ */
+
+
+
 
 
 
@@ -214,7 +239,6 @@ features-section-start
     color: #434343;
     font-size: 3rem;
     width: 400px;
-    
 }
 .features-description b{
     color: black;
@@ -228,9 +252,12 @@ features-section-start
     font-size: 17px;
     margin-bottom: 20px;
 }
-/*-----------------
- mobile devices
-------------------- */
+/* ------------------------
+features-section-end
+--------------------------- */
+/*---------------------------------------------
+ features-section mobile device-optimize- start
+----------------------------------------------- */
 @media screen and (max-width:576px) {
     .features-section{
         width: 80%;
@@ -264,7 +291,7 @@ features-section-start
     .features-description h3{
         color: #434343;
         font-size: 2rem;
-        width: 60%;
+        width: 80%;
         text-align: center;
         
     }
@@ -277,13 +304,11 @@ features-section-start
     }
     
 }
-/*-----------------
- mobile devices
-------------------- */
+/*---------------------------------------------
+ features-section mobile device-optimize- start
+----------------------------------------------- */
 
-/* ------------------------
-features-section-end
---------------------------- */
+
 
 
 
@@ -352,13 +377,23 @@ features-section-end
     top: -80px;
     left: -50px;
 }
-/*------------------ 
-mobile devices
------------------- */
+/*----------------------------
+ experience-section-end
+----------------------------- */
+/*---------------------------------------------
+ experience-section mobile device-optimize- start
+----------------------------------------------- */
 @media screen and (max-width:576px) {
     .experience-section{
         width: 80%;
         margin: 0 auto;
+    }
+    .experience-description{
+        gap: 20px;
+    }
+    .experience-paragraph{
+        width: 100%;
+        font-size: 0.8rem;
     }
     .experience{
         flex-direction: column;
@@ -377,17 +412,19 @@ mobile devices
         width: 100%;
     }
     .experience-image .last-box{
-        left: 10px;
+        position: relative;
+        top: -50px;
+        left: 0;
         
     }
     
 }
-/*------------------ 
-mobile devices
------------------- */
-/*----------------------------
- experience-section-end
------------------------------ */
+/*---------------------------------------------
+experience-section mobile device-optimize- end
+----------------------------------------------- */
+
+
+
 
 
 
@@ -452,9 +489,12 @@ Fact-section-start
     color: white;
     
 }
-/*-------------------
- mobile-desvices
--------------------- */
+/*------------------------ 
+Fact-section-end
+----------------------- */
+/*---------------------------------------------
+fact-section mobile device-optimize- start
+----------------------------------------------- */
 @media screen and (max-width:576px) {
     .fact{
         width: 80%;
@@ -478,17 +518,17 @@ Fact-section-start
         align-items: center;
     }
 }
-/*-------------------
- mobile-desvices
--------------------- */
-/*------------------------ 
-Fact-section-end
------------------------ */
+/*---------------------------------------------
+fact-section mobile device-optimize- end
+----------------------------------------------- */
+
+
+
 
 
 
 /*------------------------- 
-experience-section-star
+soonsors-section-start
 --------------------------- */
 .sponsors{
     width: 80%;
@@ -519,13 +559,12 @@ experience-section-star
     width: 120px;
     
 }
-
 /*------------------------- 
-experience-section-end
+soonsors-section-end
 --------------------------- */
-/*-------------------
- mobile-desvices
--------------------- */
+/*---------------------------------------------
+sponsors-section mobile device-optimize- start
+----------------------------------------------- */
 @media screen and (max-width:576px) {
     .sponsors{
         width: 80%;
@@ -549,9 +588,126 @@ experience-section-end
     }
     
 }
-/*-------------------
- mobile-desvices
--------------------- */
+/*---------------------------------------------
+sponsors-section mobile device-optimize- end
+----------------------------------------------- */
+
+
+
+
+
+/*----------------------- 
+project-section-start
+------------------------- */
+.projects{
+    width: 80%;
+    margin: 0 auto;
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project-title{
+    margin: 50px 0;
+    font-size: 2rem;
+}
+.project-boxes{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.project-box{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: #434343 2px 2px 20px;
+    border-radius: 10px;
+    transition: all .3s;
+}
+.project-box img{
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+}
+.project-box p{
+    padding: 10px 20px;
+    font-size: 0.7rem;
+}
+.project-box b{
+    padding-left: 20px;
+    font-size: 0.9rem;
+}
+.project-box button{
+    background-color: transparent;
+    color: black;
+    border: 2px solid #FF900E;
+    margin: 20px 20px;
+    width: 80px;
+}
+.project-box:hover{
+    transform: scale(120%);
+}
+.project-box:hover button{
+    transform: scale(120%);
+    background-color: #FF900E;
+    color: white;
+}
+/*----------------------- 
+project-section-end
+------------------------- */
+/*---------------------------------------------
+project-section mobile device-optimize- start
+----------------------------------------------- */
+@media screen and (max-width:576px) {
+    .project{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-box img{
+        width: 100%;
+        height: 200px;
+        padding: 20px;
+    }
+    .project-boxes{
+        gap: 50px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .project-box{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        box-shadow: #434343 2px 2px 20px;
+        border-radius: 10px;
+        transition: all .3s;
+        margin: 0 auto;
+    }
+    .project-box p{
+        padding: 5px 20px;
+        font-size: 0.6rem;
+    }
+    .project-box button{
+        margin: 10px 20px;
+    }
+    
+}
+/*---------------------------------------------
+project-section mobile device-optimize- end
+----------------------------------------------- */
+
+
+
+
+
+
+
+
+/*---------------
+ footer-start
+----------------- */
 footer{
     background-color: #FFF4E7;
     width: 80%;
@@ -564,6 +720,12 @@ footer p{
     color: #434343;
     padding-top: 20px;
 }
+/*---------------
+ footer-end
+----------------- */
+/*---------------------------------------------
+footer-section mobile device-optimize- start
+----------------------------------------------- */
 @media screen and (max-width:576px) {
     footer{
         width: 80%;
@@ -579,4 +741,6 @@ footer p{
     }
     
 }
-
+/*---------------------------------------------
+footer-section mobile device-optimize- end
+----------------------------------------------- */
