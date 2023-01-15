@@ -599,11 +599,11 @@ sponsors-section mobile device-optimize- end
 /*----------------------- 
 project-section-start
 ------------------------- */
-.projects{
+.project-section{
     width: 80%;
     margin: 0 auto;
 }
-.project{
+.project-all{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -660,7 +660,7 @@ project-section-end
 project-section mobile device-optimize- start
 ----------------------------------------------- */
 @media screen and (max-width:576px) {
-    .project{
+    .project-all{
         display: flex;
         flex-direction: column;
         align-items: center;
