@@ -558,7 +558,7 @@ soonsors-section-start
 }
 .sponsor-company img{
     width: 120px;
-    
+    filter: grayscale(100%);
 }
 /*------------------------- 
 soonsors-section-end
