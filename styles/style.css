@@ -450,10 +450,10 @@ Fact-section-start
 }
  .fact-boxs{
     display: flex;
-    gap: 50px;
+    justify-content: space-between;
     width: 70%;
-    margin: 0 auto;
     margin-top: 50px;
+    width: 100%;
 }
 .fact-box{
     display: flex;
